@@ -1,0 +1,30 @@
+﻿@page "/"
+
+@using WebApplication1
+<table>
+    <tr @ref="_canvasContainer1" style="visibility: visible">
+        <canvas @ref="_canvasElement1"
+                width="1000"
+                height="300"
+                tabindex="0"
+                style="border:1px solid #000000;" />
+    </tr>
+    <tr @ref="_canvasContainer2" style="visibility: visible">
+        <canvas @ref="_canvasElement2"
+                width="1000"
+                height="300"
+                tabindex="0"
+                style="border:1px solid #000000;" />
+    </tr>
+</table>
+
+<div class="col-md-12">
+
+    <div class="form-group row">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary" @onclick="SwitchToView1">View1</button>
+            <button type="button" class="btn btn-secondary" @onclick="SwitchToView2">View2</button>
+        </div>
+    </div>
+</div>
+
